@@ -50,7 +50,7 @@ def run(songs)
       exit_jukebox
       break
     else
-      print "Invalid command."
+      print "Invalid command. "
     end
   end
 end
