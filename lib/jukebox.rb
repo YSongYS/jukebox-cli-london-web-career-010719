@@ -27,5 +27,30 @@ def play (songs)
     puts "Playing #{user_input}"
   else
     puts "Invalid input, please try again"
+  end
+end
 
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run
+  help
+  while user_input <> "exit" do
+    user_input = ""
+    puts "Please enter a command:"
+    user_input = gets.chomp
+    if user_input == "help"
+      help
+    elsif user_input == "list"
+      list
+    elsif user_input == "run"
+      run(songs)
+    elsif user_input = "exit"
+      exit_jukebox
+      break
+    else
+      print "Invalid command."
+    end
+  end
 end
