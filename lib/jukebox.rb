@@ -18,7 +18,7 @@ def list
 9. Amos Lee - Keep It Loose, Keep It Tight"
 end
 
-def play (songs)
+def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   if user_input.to_i.is_a?(Integer) && user_input.to_i<songs.size && user_input.to_i>0
