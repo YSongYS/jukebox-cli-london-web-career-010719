@@ -36,7 +36,7 @@ end
 
 def run
   help
-  while user_input <> "exit" do
+  while user_input != "exit" do
     user_input = ""
     puts "Please enter a command:"
     user_input = gets.chomp
