@@ -34,7 +34,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run (songs)
   help
   while user_input != "exit" do
     user_input = ""
@@ -46,7 +46,7 @@ def run
       list
     elsif user_input == "run"
       run(songs)
-    elsif user_input = "exit"
+    elsif user_input == "exit"
       exit_jukebox
       break
     else
